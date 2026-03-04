@@ -8,6 +8,7 @@
 :root{
     --bg: #010203;
 }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -66,26 +67,25 @@ body{
 
 h2{
     font-family: "Zen Dots", sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-decoration: underline;
 }
 
 p{
-    max-width: 40ch;
+    font-size: 1rem;
 }
 
 h2, p:first-of-type{
     text-align: center;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 p:first-of-type{
-font-style: italic;
+    font-style: italic;
 }
 
 p:last-of-type{
-    margin-bottom: 20px;
-    padding-left: 20px;
+    margin: 10px 0;
 }
 
 main{
@@ -97,31 +97,34 @@ main{
 }
 
 main video{
-    position: absolute;
-    left: 0;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
-    height: 100vh;
-    width: 100vw;
-    object-fit: fill;
+    height: 100%;
+    width: 2000px;
+    justify-self: center;
+    object-fit:fill;
     z-index: -1;
 }
 
 main div{
     background-color: red;
-    padding: 10px;
     filter: blur(0.65px);
+    width: min(85%, 26em);
     box-shadow: 0px 0px 8px 2px #000000;
     animation: fadeIn 3s ease;
     animation-fill-mode: backwards;
     animation-delay: 2s;
     position: relative;
+    padding: 0 20px;
 }
 
 main small{
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
     padding: 3px;
 
 }
