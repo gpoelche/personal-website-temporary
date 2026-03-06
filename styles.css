@@ -63,6 +63,7 @@ body{
     overflow: hidden;
     font-family: "Turret Road", sans-serif;
     font-size: 1.15rem;
+    height: 100dvh;
 }
 
 h2{
@@ -106,6 +107,7 @@ main video{
     justify-self: center;
     object-fit:fill;
     z-index: -1;
+    animation: fadeIn 1.5s ease-in;
 }
 
 main div{
@@ -117,7 +119,7 @@ main div{
     animation-fill-mode: backwards;
     animation-delay: 2s;
     position: relative;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 main small{
@@ -139,10 +141,12 @@ main a:hover{
     text-decoration: underline;
 }
 
-video{
-    animation: fadeIn 1.5s ease-in;
-}
-
 span{
     font-weight: bold;
+}
+
+
+/*TO-DO: ADD CUSTOM MOUSE FOR WEBSITE BUT ONLY FOR DEVICES WITH FINE CURSORS*/
+@media (pointer: fine){
+    /*INSERT CSS STYLES FOR CUSTOM WEBSITE MOUSE*/
 }
